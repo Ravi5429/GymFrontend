@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FITNESS CENTER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <style>
+    body {
+      background-image: url("gym1.jpg");
+      background-size: 1500px 1000px;
+      background-repeat: no-repeat;
+
+      /* background-color: bisque; */
+    }
+
+    div {
+      border: 2px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: inline-block;
+      color: hotpink;
+      margin: 5px;
+      padding: 2px;
+      font-size: 25px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 5px;
+      padding: 2px;
+      /* border: 2px solid black; */
+      text-shadow: 2px 2px 4px #000000;
+      color: white;
+      background-image: url("logo1.jpg");
+      background-size: 100px 50px;
+      background-repeat: no-repeat;
+      font-style: bold;
+      font-family: "Baloo Bhaijaan 2", cursive;
+    }
+
+    .nav:hover {
+      /* background-color: brown; */
+      color: tomato;
+      font-size: 30px;
+    }
+
+    .nav:active {
+      background-color: chartreuse;
+    }
+
+    .form {
+      color: black;
+      margin: 10px;
+      padding: 5px;
+      font-size: medium;
+      font-style: bold;
+    }
+
+    .det {
+      display: absolute;
+      margin: 20px;
+      padding: 10px;
+      font-size: 50px;
+      font-style: italic;
+      color: red;
+      float: left;
+      font-family: "Baloo Bhaijaan 2", cursive;
+    }
+
+    #submit {
+      margin-left: 300px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    #reset {
+      margin-left: 35px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    #submit:hover {
+      background-color: cyan;
+    }
+
+    #reset:hover {
+      background-color: blueviolet;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wel">
+    <h1>Welcome to fitness center</h1>
+  </div>
+  <div class="navigation">
+    <ul>
+      <li><a id="home" class="nav" href="#home">Home</a></li>
+      <li><a id="fill" class="nav" href="#fill">IMAGE</a></li>
+      <li><a id="about" class="nav" href="#about">About</a></li>
+      <li><a id="contact" class="nav" href="#contact">Contact us</a></li>
+    </ul>
+  </div>
+
+  <div class="det">
+    <form action="backand.php"></form>
+    <label for="name">Enter your name</label>
+    <input type="text" class="form" id="name" /><br />
+
+    <label for="age">Enter your age</label>
+    <input type="number" class="form" id="age" /><br />
+
+    <label for="adress">Enter your adress </label>
+    <input type="text" class="form" id="adress" /><br />
+
+    <label for="num">Enter your number</label>
+    <input type="text" class="form" id="num" /><br />
+
+    <label for="birth">Enter your date of birth</label>
+    <input type="date" class="form" id="birth" /><br />
+
+    <input type="submit" class="form" id="submit" />
+    <input type="reset" class="form" id="reset" />
+  </div>
+</body>
+
+</html>
